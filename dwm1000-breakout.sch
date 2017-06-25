@@ -7657,8 +7657,8 @@ Source: www.kingbright.com</description>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206"/>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206"/>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206"/>
-<part name="RXLED" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SMT1206"/>
-<part name="TXLED" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SMT1206"/>
+<part name="RX" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SMT1206"/>
+<part name="TX" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SMT1206"/>
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 </parts>
@@ -7676,8 +7676,8 @@ Source: www.kingbright.com</description>
 <instance part="R1" gate="G$1" x="180.34" y="35.56" rot="R180"/>
 <instance part="R2" gate="G$1" x="180.34" y="43.18" rot="R180"/>
 <instance part="R3" gate="G$1" x="180.34" y="27.94" rot="R180"/>
-<instance part="RXLED" gate="G$1" x="190.5" y="35.56" rot="R90"/>
-<instance part="TXLED" gate="G$1" x="190.5" y="43.18" rot="R90"/>
+<instance part="RX" gate="G$1" x="190.5" y="35.56" rot="R90"/>
+<instance part="TX" gate="G$1" x="190.5" y="43.18" rot="R90"/>
 <instance part="SUPPLY1" gate="GND" x="200.66" y="15.24"/>
 <instance part="+3V1" gate="G$1" x="210.82" y="48.26"/>
 </instances>
@@ -7714,11 +7714,11 @@ Source: www.kingbright.com</description>
 <label x="137.16" y="27.94" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="TXLED" gate="G$1" pin="C"/>
+<pinref part="TX" gate="G$1" pin="C"/>
 <wire x1="195.58" y1="43.18" x2="200.66" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="43.18" x2="200.66" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
-<pinref part="RXLED" gate="G$1" pin="C"/>
+<pinref part="RX" gate="G$1" pin="C"/>
 <wire x1="200.66" y1="35.56" x2="200.66" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="27.94" x2="200.66" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="35.56" x2="200.66" y2="35.56" width="0.1524" layer="91"/>
@@ -7919,14 +7919,14 @@ Source: www.kingbright.com</description>
 <net name="N$1" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="RXLED" gate="G$1" pin="A"/>
+<pinref part="RX" gate="G$1" pin="A"/>
 <wire x1="185.42" y1="35.56" x2="187.96" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
-<pinref part="TXLED" gate="G$1" pin="A"/>
+<pinref part="TX" gate="G$1" pin="A"/>
 <wire x1="185.42" y1="43.18" x2="187.96" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
