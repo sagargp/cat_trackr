@@ -7661,6 +7661,8 @@ Source: www.kingbright.com</description>
 <part name="TX" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SMT1206"/>
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="PWR" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SMT1206"/>
+<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206"/>
 </parts>
 <sheets>
 <sheet>
@@ -7687,6 +7689,8 @@ Source: www.kingbright.com</description>
 <instance part="TX" gate="G$1" x="190.5" y="43.18" rot="R90"/>
 <instance part="SUPPLY1" gate="GND" x="200.66" y="15.24"/>
 <instance part="+3V1" gate="G$1" x="210.82" y="48.26"/>
+<instance part="PWR" gate="G$1" x="190.5" y="53.34" rot="R90"/>
+<instance part="R4" gate="G$1" x="180.34" y="53.34"/>
 </instances>
 <busses>
 </busses>
@@ -7736,6 +7740,10 @@ Source: www.kingbright.com</description>
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="210.82" y1="33.02" x2="210.82" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="27.94" x2="200.66" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="PWR" gate="G$1" pin="C"/>
+<wire x1="195.58" y1="53.34" x2="200.66" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="53.34" x2="200.66" y2="43.18" width="0.1524" layer="91"/>
+<junction x="200.66" y="43.18"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -7760,6 +7768,10 @@ Source: www.kingbright.com</description>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="210.82" y1="40.64" x2="210.82" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="53.34" x2="170.18" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -7935,6 +7947,13 @@ Source: www.kingbright.com</description>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="TX" gate="G$1" pin="A"/>
 <wire x1="185.42" y1="43.18" x2="187.96" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="PWR" gate="G$1" pin="A"/>
+<wire x1="185.42" y1="53.34" x2="187.96" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
