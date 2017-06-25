@@ -1624,7 +1624,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="10.033" y="6.731" size="0.4064" layer="26" font="vector" rot="MR270"/>
 <attribute name="VALUE" x="5.842" y="5.08" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="C2" library="Passives" package="C1210" value="" x="10.16" y="19.05" rot="MR90">
+<element name="C2" library="Passives" package="C1210" value="0.1uF" x="10.16" y="19.05" rot="MR90">
 <attribute name="DIGIKEY" value="N/A" x="10.16" y="19.05" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MPN" value="N/A" x="10.16" y="19.05" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="TEMP_COF" value="N/A" x="10.16" y="19.05" size="1.778" layer="28" rot="MR90" display="off"/>
@@ -1667,6 +1667,8 @@ Please make sure your boards conform to these design rules.</description>
 <via x="10.16" y="22.86" extent="1-16" drill="0.635"/>
 <via x="15.24" y="22.86" extent="1-16" drill="0.635"/>
 <via x="12.7" y="15.24" extent="1-16" drill="0.635"/>
+<contactref element="R2" pad="1"/>
+<contactref element="R1" pad="1"/>
 </signal>
 <signal name="+3V3">
 <contactref element="U2" pad="5"/>
