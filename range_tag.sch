@@ -3451,7 +3451,7 @@ Last modified: 8/17/10&lt;br&gt;
 <wire x1="63.5" y1="170.18" x2="63.5" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="USBDM" class="0">
 <segment>
 <pinref part="JP2" gate="G$1" pin="D-"/>
 <wire x1="-58.42" y1="132.08" x2="-48.26" y2="132.08" width="0.1524" layer="91"/>
@@ -3460,7 +3460,7 @@ Last modified: 8/17/10&lt;br&gt;
 <wire x1="-48.26" y1="142.24" x2="-12.7" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="USBDP" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="USBDP"/>
 <wire x1="-12.7" y1="139.7" x2="-45.72" y2="139.7" width="0.1524" layer="91"/>
